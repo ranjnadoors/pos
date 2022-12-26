@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 </head>
 
 <body>
     <div class="container-fluid bg-white">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-md navbar-light">
             <a class="navbar-brand" href="#"><img src="./assets/images/logo (1).png" class="img-fluid" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,21 +24,21 @@
             </button>
 
             <div class="collapse navbar-collapse row" id="navbarSupportedContent">
-                <div class="col-8 d-flex justify-content-center">
+                <div class="col-7 d-flex justify-content-center">
                     <div class="form-group has-search mx-5 mb-0">
                         <input type="text" class="form-control" placeholder="Scan/Search Product by Code Or Name">
                         <img src="./assets/images/search.png" class="img-fluid" alt="">
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-5">
                     <div class="d-flex">
-                        <img src="./assets/images/profile-pic.png" class="img-fluid" alt="">
+                        <img src="./assets/images/profile-pic.png" class="img-fluid h-50" alt="">
                         <div class="py-1">
                             <div class="name px-2">Welcome, Jobby!</div>
                             <div class="detail px-2">Cashier on <span>Anythinginstantly</span></div>
                         </div>
                         <div class=" bell">
-                            <img src="./assets/images/bell.png" class="img-fluid mt-3 ml-5" alt="">
+                            <img src="./assets/images/bell.png" class="img-fluid mt-3 ml-lg-5" alt="">
                         </div>
                     </div>
                 </div>
@@ -49,24 +50,24 @@
     <!----------------------main left content-------------->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-8 py-3 px-2" id="left-bg">
+            <div class="col-md-6 col-lg-8 py-3 px-2" id="left-bg">
                 <div class="row justify-content-center">
-                    <div class="col text-right">
-                        <button id="toggle" class="list-btn px-5 py-2" style="cursor: pointer;" onclick="openNav()">List
+                    <div class="col text-right mb-2">
+                        <button id="toggle" class="list-btn px-2 py-2" style="cursor: pointer;" onclick="openNav()">List
                             of Category</button>
                     </div>
-                    <div class="col">
+                    <div class="col mb-2">
                         <button class="brand-btn px-5 py-2 ml-2" id="toggle1" style="cursor: pointer;"
                             onclick="brandNav()">Brands</button>
                     </div>
-                    <div class="col text-left mt-md-0 mt-2">
+                    <div class="col text-lg-left text-center mb-2">
                         <button id="toggle" class="list-btn px-5 py-2">Order History</button>
                     </div>
                 </div>
-                <div class="row py-3 px-3 mt-4 items">
-                    <div class="col-lg-3 col-md-6 col-12 ">
+                <div class="row py-3 px-3 mt-4">
+                    <div class="col-lg-3 col-md-6 col-12 mb-4">
                         <div class="border-bg py-3">
-                            <div class="text-center">
+                            <div class="text-center px-2">
                                 <img src="./assets/images/img1.png" class="img-fluid" alt="">
                             </div>
                             <div class="head-name ml-4">Avocado</div>
@@ -77,22 +78,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="border-bg py-3 mt-4">
-                            <div class="text-center px-3">
-                                <img src="./assets/images/img5.png" class="img-fluid img5 " alt="">
-                            </div>
-                            <div class="head-name ml-4">Banana</div>
-                            <div class="d-flex justify-content-around">
-                                <div class="dis-head">71087180</div>
-                                <div class="d-flex"> <span class="green-dollar">$ </span>
-                                    <div class="price">30.00</div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 ">
+                    <div class="col-lg-3 col-md-6 col-12 mb-4">
                         <div class="border-bg py-3">
-                            <div class="text-center">
+                            <div class="text-center px-2">
                                 <img src="./assets/images/img2.png" class="img-fluid py-3 px-3" alt="">
                             </div>
                             <div class="head-name ml-4">Limon</div>
@@ -103,11 +93,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="border-bg py-3 mt-3">
-                            <div class="text-center">
-                                <img src="./assets/images/img6.png" class="img-fluid py-4 px-4 " alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 mb-4">
+                        <div class="border-bg py-3">
+                            <div class="text-center px-2">
+                                <img src="./assets/images/img2.png" class="img-fluid py-3 px-3" alt="">
                             </div>
-                            <div class="head-name ml-4">Sunglasses</div>
+                            <div class="head-name ml-4">Limon</div>
                             <div class="d-flex justify-content-around">
                                 <div class="dis-head">71087180</div>
                                 <div class="d-flex"> <span class="green-dollar">$ </span>
@@ -116,24 +108,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 ">
+                    <div class="col-lg-3 col-md-6 col-12 mb-4">
                         <div class="border-bg py-3">
-                            <div class="text-center">
-                                <img src="./assets/images/img3.png" class="img-fluid py-2 px-2" alt="">
+                            <div class="text-center px-2">
+                                <img src="./assets/images/img2.png" class="img-fluid py-3 px-3" alt="">
                             </div>
-                            <div class="head-name ml-4">Airpods Pro</div>
-                            <div class="d-flex justify-content-around">
-                                <div class="dis-head">71087180</div>
-                                <div class="d-flex"> <span class="green-dollar">$ </span>
-                                    <div class="price">30.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="border-bg py-3 mt-3">
-                            <div class="text-center">
-                                <img src="./assets/images/img7.png" class="img-fluid img7 px-3" alt="">
-                            </div>
-                            <div class="head-name ml-4">Shoes</div>
+                            <div class="head-name ml-4">Limon</div>
                             <div class="d-flex justify-content-around">
                                 <div class="dis-head">71087180</div>
                                 <div class="d-flex"> <span class="green-dollar">$ </span>
@@ -142,50 +122,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 ">
+                    <div class="col-lg-3 col-md-6 col-12 mb-4">
                         <div class="border-bg py-3">
-                            <div class="text-center">
-                                <img src="./assets/images/img4.png" class="img-fluid img4 px-2" alt="">
+                            <div class="text-center px-2">
+                                <img src="./assets/images/img2.png" class="img-fluid py-3 px-3" alt="">
                             </div>
-                            <div class="head-name ml-4">Macbook Pro</div>
-                            <div class="d-flex justify-content-around">
-                                <div class="dis-head">71087180</div>
-                                <div class="d-flex"> <span class="green-dollar">$ </span>
-                                    <div class="price">30.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="border-bg py-3 mt-3">
-                            <div class="text-center">
-                                <img src="./assets/images/img8.png" class="img-fluid py-1" alt="">
-                            </div>
-                            <div class="head-name ml-4">Strawberry</div>
-                            <div class="d-flex justify-content-around">
-                                <div class="dis-head">71087180</div>
-                                <div class="d-flex"> <span class="green-dollar">$ </span>
-                                    <div class="price">30.00</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12 ">
-                        <div class="border-bg py-3">
-                            <div class="text-center">
-                                <img src="./assets/images/img4.png" class="img-fluid img4 px-2" alt="">
-                            </div>
-                            <div class="head-name ml-4">Macbook Pro</div>
-                            <div class="d-flex justify-content-around">
-                                <div class="dis-head">71087180</div>
-                                <div class="d-flex"> <span class="green-dollar">$ </span>
-                                    <div class="price">30.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="border-bg py-3 mt-3">
-                            <div class="text-center">
-                                <img src="./assets/images/img8.png" class="img-fluid py-1" alt="">
-                            </div>
-                            <div class="head-name ml-4">Strawberry</div>
+                            <div class="head-name ml-4">Limon</div>
                             <div class="d-flex justify-content-around">
                                 <div class="dis-head">71087180</div>
                                 <div class="d-flex"> <span class="green-dollar">$ </span>
@@ -196,9 +138,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 py-3 px-3" id="right-side">
+
+            <div class="col-md-6 col-lg-4 py-3 px-3" id="right-side">
                 <div class=" d-flex justify-content-center align-items-center">
-                    <div class="col-9">
+                    <div class="col-md-9 col-7">
                         <div class="dropdown">
                             <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                                 aria-expanded="false">
@@ -212,7 +155,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3 text-right">
+                    <div class="col-md-3 col-5 text-right">
                         <button class="add-btn px-2 pb-1">+</button>
                     </div>
                 </div>
@@ -238,11 +181,11 @@
                                     class="img-fluid mb-2" alt=""></a>
                         </div>
                     </div>
-                    <div class="col-3 mt-3 text-center d-flex">
+                    <div class=" col-md-2 mt-3 text-center d-flex">
                         <span class="dollar">$ </span>
                         <div class="price">15.00</div>
                     </div>
-                    <div class="col-3 mt-2  text-center">
+                    <div class=" col-md-4 mt-2  text-center">
                         <div class="cart-bg py-1"><button class="minus-btn">-</button><span class="mx-2">2</span><button
                                 class="plus-btn">+</button></div>
                     </div>
@@ -260,11 +203,11 @@
                                     class="img-fluid mb-2" alt=""></a>
                         </div>
                     </div>
-                    <div class="col-3 mt-3 text-center d-flex">
+                    <div class=" col-md-2 mt-3 text-center d-flex">
                         <span class="dollar">$ </span>
                         <div class="price">15.00</div>
                     </div>
-                    <div class="col-3 mt-2  text-center">
+                    <div class="col-md-4 mt-2  text-center">
                         <div class="cart-bg py-1"><button class="minus-btn">-</button><span class="mx-2">2</span><button
                                 class="plus-btn">+</button></div>
                     </div>
@@ -282,11 +225,11 @@
                                     class="img-fluid mb-2" alt=""></a>
                         </div>
                     </div>
-                    <div class="col-3 mt-3 text-center d-flex">
+                    <div class="col-md-2 mt-3 text-center d-flex">
                         <span class="dollar">$ </span>
                         <div class="price">15.00</div>
                     </div>
-                    <div class="col-3 mt-2  text-center">
+                    <div class="col-md-4 mt-2  text-center">
                         <div class="cart-bg py-1"><button class="minus-btn">-</button><span class="mx-2">2</span><button
                                 class="plus-btn">+</button></div>
                     </div>
@@ -305,7 +248,7 @@
                         </div>
                     </div>
                     <div class="total-payable row justify-content-center mt-3 pay-border mx-4">
-                        <div class="d-flex  py-2 px-5">
+                        <div class="d-flex  py-2 px-lg-5">
                             <div class="pay">Total Payable :</div>
                             <div class="d-flex ml-2"> <span class="green-dollar1">$ </span>
                                 <div class="payable-amount">90.00</div>
@@ -331,8 +274,8 @@
                         </div>
                     </div>
                     <div class="row justify-content-center mt-3">
-                        <button class="reset-btn rounded">Reset</button>
-                        <button class="hold-btn rounded ml-3">Hold</button>
+                        <div class="col-6"><button class="reset-btn rounded ">Reset</button></div>
+                        <div class="col-6"> <button class="hold-btn rounded ml-3">Hold</button></div>
 
                     </div>
                     <div class="row justify-content-center mt-3">
@@ -347,86 +290,116 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="side-h1 mx-2 mt-2">List of Category</div>
-            <div class="row py-3 px-3 mt-4 side-items">
-                <div class="col">
-                    <div class="border-bg text-center">
-                        <img src="./assets/images/no-image.png" class="img-fluid w-75 h-75" alt="">
-                        <div class="head-name text-center">Avocado</div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner ml-5 w-75 mt-4">
+                    <div class="carousel-item active">
+                        <div class="border-bg text-center">
+                            <img src="./assets/images/no-image.png" class="img-fluid w-75 h-75" alt="">
+                            <div class="head-name text-center">Avocado</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="border-bg text-center">
+                            <img src="./assets/images/no-image.png" class="img-fluid w-75 h-75" alt="">
+                            <div class="head-name text-center">Avocado</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="border-bg text-center">
+                            <img src="./assets/images/no-image.png" class="img-fluid w-75 h-75" alt="">
+                            <div class="head-name text-center">Avocado</div>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="border-bg text-center">
-                        <img src="./assets/images/no-image.png" class="img-fluid w-75 h-75" alt="">
-                        <div class="head-name text-center">Avocado</div>
-                    </div>
-                </div>
-
-                <div class="col mt-3">
-                    <div class="border-bg text-center">
-                        <img src="./assets/images/no-image.png" class="img-fluid w-75 h-75" alt="">
-                        <div class="head-name text-center">Avocado</div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="border-bg text-center">
-                        <img src="./assets/images/no-image.png" class="img-fluid w-75 h-75" alt="">
-                        <div class="head-name text-center">Avocado</div>
-                    </div>
-                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
 
-            </div>
         </div>
-        <div id="brandSidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="brandcloseNav()">&times;</a>
-            <div class="side-h1 mx-2 mt-2">Brands</div>
-            <div class="row py-3 px-3 mt-4 brand-side-items">
-                <div class="col">
+    </div>
+    <div id="brandSidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="brandcloseNav()">&times;</a>
+        <div class="side-h1 mx-2 mt-2">Brands</div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner ml-5 w-75 mt-4">
+                <div class="carousel-item active">
                     <div class="border-bg text-center">
-                        <img src="./assets/images/no-image.png" class="img-fluid w-75 h-75" alt="">
-                        <div class="head-name text-center">Avocado</div>
-                    </div>
-                    <div class="border-bg text-center mt-3">
-                        <img src="./assets/images/no-image.png" class="img-fluid w-75 h-75" alt="">
-                        <div class="head-name text-center">Avocado</div>
-                    </div>
-                    
-                </div>
-                <div class="col">
-                    <div class="border-bg text-center">
-                        <img src="./assets/images/no-image.png" class="img-fluid w-75 h-75" alt="">
-                        <div class="head-name text-center">Avocado</div>
-                    </div>
-                    <div class="border-bg text-center mt-3">
                         <img src="./assets/images/no-image.png" class="img-fluid w-75 h-75" alt="">
                         <div class="head-name text-center">Avocado</div>
                     </div>
                 </div>
-
-                <div class="col mt-3">
+                <div class="carousel-item">
                     <div class="border-bg text-center">
-                        <img src="./assets/images/no-image.png" class="img-fluid w-75 h-75" alt="">
-                        <div class="head-name text-center">Avocado</div>
-                    </div>
-                    <div class="border-bg text-center mt-3">
                         <img src="./assets/images/no-image.png" class="img-fluid w-75 h-75" alt="">
                         <div class="head-name text-center">Avocado</div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="carousel-item">
                     <div class="border-bg text-center">
-                        <img src="./assets/images/no-image.png" class="img-fluid w-75 h-75" alt="">
-                        <div class="head-name text-center">Avocado</div>
-                    </div>
-                    <div class="border-bg text-center mt-3">
                         <img src="./assets/images/no-image.png" class="img-fluid w-75 h-75" alt="">
                         <div class="head-name text-center">Avocado</div>
                     </div>
                 </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
+        <!-- <div class="row py-3 px-3 mt-4 brand-side-items">
 
-        <div id="overlay" onclick="closeNav()"></div>
+            <div class="col">
+                <div class="border-bg text-center">
+                    <img src="./assets/images/no-image.png" class="img-fluid w-75 h-75" alt="">
+                    <div class="head-name text-center">Avocado</div>
+                </div>
+                </div>
+            <div class="col">
+                <div class="border-bg text-center">
+                    <img src="./assets/images/no-image.png" class="img-fluid w-75 h-75" alt="">
+                    <div class="head-name text-center">Avocado</div>
+                </div>
+                
+            </div>
+
+            <div class="col mt-3">
+                <div class="border-bg text-center">
+                    <img src="./assets/images/no-image.png" class="img-fluid w-75 h-75" alt="">
+                    <div class="head-name text-center">Avocado</div>
+                </div>
+               
+            </div>
+            <div class="col">
+                <div class="border-bg text-center">
+                    <img src="./assets/images/no-image.png" class="img-fluid w-75 h-75" alt="">
+                    <div class="head-name text-center">Avocado</div>
+                </div>
+               
+            </div>
+        </div> -->
+    </div>
+
+    <div id="overlay" onclick="closeNav()"></div>
     </div>
     <!-----------------register modal------------>
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -525,12 +498,18 @@
     <!-----------------list of category modal------->
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="./assets/js/bootstrap.min.js"></script>
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-<script>
+<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+
+
+
+<!-- <script>
     $(document).ready(function () {
 
         $('.brand-side-items').slick({
@@ -539,6 +518,7 @@
             slidesToScroll: 1,
             autoplay: true,
             dots: true,
+            lazyLoad: 'ondemand',
             arrows: true
         });
     });
@@ -551,22 +531,51 @@
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: false,
+            lazyLoad: 'ondemand',
             dots: true,
             arrows: true
         });
     });
-</script>
+</script> -->
 
 <script>
     $(document).ready(function () {
 
         $('.items').slick({
-            infinite: true,
+            infinite: false,
             slidesToShow: 4,
             slidesToScroll: 1,
             autoplay: true,
             dots: true,
-            arrows: true
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
         });
     });
 </script>
@@ -594,6 +603,7 @@
     function openNav() {
         overlay(true);
         document.getElementById('mySidenav').style.width = "350px";
+
     }
 
     function closeNav() {
